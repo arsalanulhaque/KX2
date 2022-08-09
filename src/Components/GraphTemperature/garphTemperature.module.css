@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.middleBox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.graphBox {
+  /* border: 1px solid; */
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.graphHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #18234d;
+  color: white;
+  padding: 5px;
+}
+.graphHeader p,
+small {
+  margin: 10px;
+}
+.btn1,
+.btn2 {
+  padding: 10px;
+  margin: 10px;
+  width: 80px;
+  border: none;
+  border-radius: 8px;
+}
+.btn1 {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.btn2 {
+  color: orangered;
+}
+.tempBox {
+  /* border: 1px solid pink; */
+  /* padding: 1F0px; */
+  background-color: #fff;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 500px;
+}
+.tempBox small,
+p {
+  margin: 10px;
+}
+.tempBox small {
+  color: gray;
+}
+.tempBox p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.text {
+  padding: 10px;
+}
+@media only screen and (max-width: 1342px) {
+  .middleBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .graphParent {
+    top: -20px;
+  }
+  .graphBox {
+    width: 80%;
+  }
+  .tempBox {
+    width: 80%;
+    margin: 10px 0;
+  }
+}

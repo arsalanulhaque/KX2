@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tableParent {
+  margin-left: 1.6%;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.table {
+  width: 65%;
+  /* border: 1px solid; */
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.table th,
+.table2 th {
+  padding: 5px;
+}
+.table th button,
+.table2 th button {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: #fff;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.table td,
+.table2 td {
+  padding: 10px 5px;
+  /* margin: 5px 0; */
+}
+.table td,
+.table2 td {
+  border: 1px solid lightgray;
+  border-left: none;
+  border-right: none;
+}
+.table td i,
+.table2 td i {
+  color: #f12711;
+}
+.table2 {
+  width: 33%;
+  /* border: 1px solid; */
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow-y: scroll;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 1100px) {
+  .tableParent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .table , .table2{
+      width: 80%;
+      margin-right: 0;
+      margin-top: 10px;
+  }
+}

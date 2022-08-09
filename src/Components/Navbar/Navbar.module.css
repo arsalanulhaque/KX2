@@ -1,0 +1,32 @@
+.logo {
+  width: 100px;
+}
+.navbarBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.navbarBox ul {
+  display: flex;
+}
+.navbarBox ul li {
+  list-style: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+@media only screen and (max-width: 640px) {
+  .navbarBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .navbarBox ul li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+  }
+}
